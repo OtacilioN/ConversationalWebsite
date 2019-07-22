@@ -35,11 +35,13 @@ class App extends React.Component {
       <div className="App-main">
         {this.state.renderText && (
           <div
+            onClick={() => console.log("aaaa")}
             style={{
               display: "flex",
               flex: 1,
               justifyContent: "center",
-              flexDirection: "column"
+              flexDirection: "column",
+              cursor: "pointer"
             }}
           >
             <div
@@ -89,7 +91,8 @@ class App extends React.Component {
               display: "flex",
               flex: 1,
               justifyContent: "center",
-              flexDirection: "column"
+              flexDirection: "column",
+              cursor: "pointer"
             }}
           >
             <div
